@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partie: Formulaire</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font-Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <!-- Le CSS de Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- JQUERY -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- popper.js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Le JavaScript de Bootstrap -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <h1 class="text-center mt-5 display-2">Composants</h1>
+    <h2 class="text-center mt-0 display-4">Formulaires</h2>
+    <br />
+    <br />
+    <br />
+    <hr />
+    <div class="container">
+      <!-- Formulaire -->
+      <form>
+        <div class="from-group">
+          <label for="name">Name</label>
+          <input
+            class="form-control"
+            type="text"
+            id="name"
+            placeholder="Enter name"
+          />
+        </div>
+        <div class="from-group">
+          <label for="email">Email address</label>
+          <input
+            class="form-control"
+            type="email"
+            id="email"
+            placeholder="Enter email"
+          />
+          <small class="text-muted">Your email will not ever be shared</small>
+        </div>
+        <div class="form-group">
+          <label for="company">Company</label>
+          <input
+            class="form-control"
+            type="text"
+            id="company"
+            placeholder="Enter company name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            class="form-control"
+            type="password"
+            id="password"
+            placeholder="Password"
+          />
+        </div>
+
+        <!-- Selectionner -->
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select class="form-control" id="gender">
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+        <!-- TextArea -->
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+        <br /><br />
+        <!-- Custom -->
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select class="custom-select" id="gender">
+            <option selected>Choisir un genre</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+        <!-- Input de type File : Ajouter la class form-control-file à l'input type="file"-->
+        <div class="froup-group">
+          <label for="exampleFormControlFile1">Choisir un fichier</label>
+          <input
+            type="file"
+            class="form-control-file"
+            id="exampleFormControlFile1"
+          />
+        </div>
+
+        <!-- Input de type Range -->
+        <div class="form-group">
+          <label for="membership">Membership Level</label>
+          <input
+            class="custom-range"
+            min="1"
+            max="10"
+            step="1"
+            value="5"
+            type="range"
+          />
+        </div>
+        <br />
+        <button class="btn btn-primary btn-block" type="submit">Submit</button>
+      </form>
+
+      <br />
+      <br />
+      <!-- créer les cases à cocher et les boutons radio-->
+      <form>
+        <div class="from-check">
+          <input
+            class="from-checked-input"
+            type="checkbox"
+            value="c1"
+            id="ck1"
+          />
+          <label class="from-checked-label" for="ck1">Case 1</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="c2" id="ck2" />
+          <label class="form-check-label" for="ck2">Case 2</label>
+        </div>
+
+        <!-- créer  les boutons radios-->
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="radio"
+            id="radio1"
+            value="o1"
+            disabled
+          />
+          <label class="form-check-label" for="radio1">Option 1</label>
+          <!--pour désactiver un bouton radio                                                                  on utilise disabled-->
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="radio"
+            id="radio1"
+            value="o1"
+          />
+          <label class="form-check-label" for="radio1">Option 2</label>
+        </div>
+      </form>
+      <br /><br />
+      <!-- costumiser les cases à cocher et les boutons radio-->
+      <form>
+        <div class="custom-control costum-checkbox">
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="chkb"
+            checked
+          />
+          <label class="custom-control-label" for="chkb">Un checkbox</label>
+        </div>
+
+        <!--Radiobutton:inline-->
+        <div class="custom-control custom-radio">
+          <input type="radio" class="custom-control-input" id="radio3" />
+          <label class="custom-control-label" for="radio3"
+            >Un bouton radio</label
+          >
+        </div>
+      </form>
+      <br /><br />
+
+      <!-- Rangé de Form 6x6 utilisation de système de grille -->
+      <form>
+        <div class="form-row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="First name" />
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name" />
+          </div>
+        </div>
+      </form>
+
+      <br />
+      <br />
+      <!--Horizontal Form-->
+      <form>
+        <div class="form-group row">
+          <label for="email" class="col-auto col-form-label">Email</label>
+          <div class="col">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="col-form-label"
+            />
+          </div>
+        </div>
+      </form>
+
+      <form>
+        <div class="form-group row">
+          <label
+            for="emailpetit"
+            class="col-auto col-form-label col-form-label-sm"
+            >Email</label
+          >
+          <div class="col">
+            <input
+              type="email"
+              class="form-control form-control-sm"
+              id="emailpetit"
+              placeholder="col-form-label-sm"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

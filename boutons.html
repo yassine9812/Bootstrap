@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partie: Boutons</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Le CSS de Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- JQUERY -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- popper.js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Le JavaScript de Bootstrap -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Boutons</h1>
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-secondary mb-2">Secondary</button>
+      <button type="button" class="btn btn-success mb-2">Success</button>
+      <button type="button" class="btn btn-danger mb-2">Danger</button>
+      <button type="button" class="btn btn-warning mb-2">Warning</button>
+      <button type="button" class="btn btn-info mb-2">Info</button>
+      <button type="button" class="btn btn-light mb-2">Light</button>
+      <button type="button" class="btn btn-dark mb-2">Dark</button>
+      <button type="button" class="btn btn-link mb-2">Lien</button>
+
+      <button type="button" class="btn btn-outline-primary mb-2">
+        Primary
+      </button>
+      <button type="button" class="btn btn-outline-secondary mb-2">
+        Secondary
+      </button>
+      <button type="button" class="btn btn-outline-success mb-2">
+        Success
+      </button>
+      <button type="button" class="btn btn-outline-danger mb-2">Danger</button>
+      <button type="button" class="btn btn-outline-warning mb-2">
+        Warning
+      </button>
+      <button type="button" class="btn btn-outline-info mb-2">Info</button>
+      <button type="button" class="btn btn-outline-light mb-2">Light</button>
+      <button type="button" class="btn btn-outline-dark mb-2">Dark</button>
+      <h1>Changer la taille des Boutons</h1>
+      <button type="button" class="btn btn-primary mb-2">
+        bouton standard
+      </button>
+      <button type="button" class="btn btn-primary btn-lg mb-2">
+        Grand bouton
+      </button>
+      <button type="button" class="btn-primary btn-sm mb-2">
+        Petit bouton
+      </button>
+      <h1>Changer le type d'affichage d'un bouton</h1>
+      <button type="button" class="btn btn-success btn-block">
+        Bouton de type block
+      </button>
+      <h2>Activer et désactiver un bouton</h2>
+
+      <button type="button" class="btn btn-primary">Bouton standard</button>
+      <button type="button" class="btn btn-primary active">Bouton actif</button>
+      <button type="button" class="btn btn-primary disabled">
+        Bouton désactivé
+      </button>
+      <br /><br />
+      <br /><br />
+      <h2>Grouper des boutons</h2>
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary">Gauche</button>
+        <button type="button" class="btn btn-success">Milieu</button>
+        <button type="button" class="btn btn-danger">Droite</button>
+      </div>
+      <div class="btn-group-vertical">
+        <button type="button" class="btn btn-secondary">Haut</button>
+        <button type="button" class="btn btn-success">Milieu</button>
+        <button type="button" class="btn btn-danger">Bas</button>
+      </div>
+      <h2>Gérer la taille des groupe de boutons</h2>
+      <div class="btn-group btn-group-sm mb-3">
+        <button type="button" class="btn btn-secondary">Gauche</button>
+        <button type="button" class="btn btn-success">Milieu</button>
+      </div>
+      <br />
+      <div class="btn-group btn-group-lg mb-3">
+        <button type="button" class="btn btn-secondary">Gauche</button>
+        <button type="button" class="btn btn-success">Milieu</button>
+      </div>
+      <br /><br />
+      <br /><br />
+      <h2>Boutons imbriqués</h2>
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary">Apple</button>
+        <button type="button" class="btn btn-primary">Samsung</button>
+        <div class="btn-group">
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle"
+            data-toggle="dropdown"
+          >
+            Sony
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Tablette</a>
+            <a class="dropdown-item" href="#">Smartphone</a>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+      <br /><br />
+      <br /><br />
+      <br /><br />
+      <br /><br />
+    </div>
+  </body>
+</html>

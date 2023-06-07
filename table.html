@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les tableaux</title>
+    <link rel="stylesheet" href="style.css">
+   <!-- Le CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <!-- Le JavaScript de Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h2>Mise en forme de base pour un Tableau </h2>
+     <div class="container">
+      <table class="table"> <!--appliquer la classe table pour une mise en forme basique -->
+        <thead>                          
+          <tr>                          
+            <th>Nom</th>
+            <th>Prénom</th>   
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="">
+            <td>Giraud</td>
+            <td>Pierre</td>
+          </tr>
+          <tr class="">
+            <td>Durand</td>
+            <td>Victor</td>
+          </tr>
+          <tr>
+            <td class="">Joly</td>
+            <td class="">Julia</td>
+         </tr>
+        </tbody>
+      </table>
+         
+ <h2>Inverser les couleurs par défaut </h2>
+      <table class="table table-dark">
+        <thead class="">
+          <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Giraud</td>
+            <td>Pierre</td>
+          </tr>
+          <tr>
+            <td>Durand</td>
+            <td>Victor</td>
+          </tr>
+          <tr>
+            <td>Joly</td>
+            <td>Julia</td>
+         </tr>
+        </tbody>
+      </table>        
+         
+     <h2>Tableau zébré </h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Giraud</td>
+            <td>Pierre</td>
+          </tr>
+          <tr>
+            <td>Durand</td>
+            <td>Victor</td>
+          </tr>
+          <tr>
+            <td>Joly</td>
+            <td>Julia</td>
+         </tr>
+        </tbody>
+      </table>        
+    <h2>Obtenir une ligne d’en-tête avec un fond gris clair </h2>
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Giraud</td>
+            <td>Pierre</td>
+          </tr>
+          <tr>
+            <td>Durand</td>
+            <td>Victor</td>
+          </tr>
+          <tr>
+            <td>Joly</td>
+            <td>Julia</td>
+         </tr>
+        </tbody>
+      </table>        
+      <h2>Obtenir une ligne d’en-tête avec un fond noir </h2>
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Giraud</td>
+            <td>Pierre</td>
+          </tr>
+          <tr>
+            <td>Durand</td>
+            <td>Victor</td>
+          </tr>
+          <tr>
+            <td>Joly</td>
+            <td>Julia</td>
+         </tr>
+        </tbody>
+      </table> 
+         
+ <h2>Ajouter des bordures </h2>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Giraud</td>
+            <td>Pierre</td>
+          </tr>
+          <tr>
+            <td>Durand</td>
+            <td>Victor</td>
+          </tr>
+          <tr>
+            <td>Joly</td>
+            <td>Julia</td>
+         </tr>
+        </tbody>
+      </table>  
+ <h2> Enlever des bordures </h2>
+      <table class="table table-borderless">
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Giraud</td>
+            <td>Pierre</td>
+          </tr>
+          <tr>
+            <td>Durand</td>
+            <td>Victor</td>
+          </tr>
+          <tr>
+            <td>Joly</td>
+            <td>Julia</td>
+         </tr>
+        </tbody>
+      </table>          
+   
+         <h2> Ajouter des effets lors du passage de la souris</h2>
+         <table class="table table-hover "> 
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Giraud</td>
+            <td>Pierre</td>
+            <td>28</td>
+          </tr>
+          <tr>
+            <td>Durand</td>
+            <td>Victor</td>
+            <td>26</td>
+          </tr>
+          <tr>
+            <td>Joly</td>
+            <td>Julia</td>
+            <td>27</td>
+          </tr>
+        </tbody>
+      </table>  
+         
+    <h2> de rendre le tableau plus compact</h2>
+         <table class="table table-sm">       
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Giraud</td>
+            <td>Pierre</td>
+            <td>28</td>
+          </tr>
+          <tr>
+            <td>Durand</td>
+            <td>Victor</td>
+            <td>26</td>
+          </tr>
+          <tr>
+            <td>Joly</td>
+            <td>Julia</td>
+            <td>27</td>
+          </tr>
+        </tbody>
+      </table> 
+         <h2>Changer les couleurs</h2>
+         <table class="table">
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+          </tr>
+        </thead>
+        <tbody> 
+          <tr class="table-danger"> 
+            <td>Giraud</td>
+            <td>Pierre</td>
+          </tr>
+          <tr  class="">
+            <td>Durand</td>
+            <td>Victor</td>
+          </tr>
+          <tr>
+            <td class="table-success">Joly</td>
+            <td class="table-primary">Julia</td> 
+          </tr>
+        </tbody>
+      </table>
+         <hr><hr><hr>
+         <h2>Tableau toujours responsive</h2>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Numéro de client</th>
+              <th>Nom</th>
+              <th>Prénom</th>
+              <th>Age</th>
+              <th>Genre</th>
+              <th>Mail</th>
+              <th>Adresse</th>
+              <th>Ville</th>
+              <th>Code postal</th>
+              <th>Pays</th>
+              <th>Nationalité</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Giraud</td>
+              <td>Pierre</td>
+              <td>28</td>
+              <td>Masculin</td>
+              <td>pierre.giraud@edhec.com</td>
+              <td>23 avenue des Lilas</td>
+              <td>Toulon</td>
+              <td>83000</td>
+              <td>France</td>
+              <td>Française</td>
+            </tr>
+          </tbody>
+        </table>
+      </div> 
+         
+         <h2>Tableau responsive jusqu'à 768px</h2>
+      <div class="table-responsive-md"> 
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Numéro de client</th>
+              <th>Nom</th>
+              <th>Prénom</th>
+              <th>Age</th>
+              <th>Sexe</th>
+              <th>Mail</th>
+              <th>Adresse</th>
+              <th>Ville</th>
+              <th>Code postal</th>
+              <th>Pays</th>
+              <th>Nationalité</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Giraud</td>
+              <td>Pierre</td>
+              <td>28</td>
+              <td>Masculin</td>
+              <td>pierre.giraud@edhec.com</td>
+              <td>23 avenue des Lilas</td>
+              <td>Toulon</td>
+              <td>83000</td>
+              <td>France</td>
+              <td>Française</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+         
+     <br><br>       <br><br>    <br><br>       <br><br>      <br><br>       <br><br>           
+
+</body>
+
+</html>
